@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TrafficEase Dashboard</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="bg">
+    <div class="navbar">
+        <h2>🚦 TrafficEase Dashboard</h2>
+        <a th:href="@{/logout}">Logout</a>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="card">
+            <h3>Traffic Status</h3>
+            <p>Junction 1: <span style="color:green;">Normal</span></p>
+            <p>Junction 2: <span style="color:red;">Heavy</span></p>
+            <p>Junction 3: <span style="color:orange;">Moderate</span></p>
+        </div>
+        
+        <div class="card">
+            <h3>Police Alerts</h3>
+            <button>Send SMS Alert</button>
+        </div>
+    </div>
+</body>
+</html>
